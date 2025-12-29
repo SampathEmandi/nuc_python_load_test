@@ -370,33 +370,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
 ]
 
-[[package]]
-name = "connect6-pro-python"
-version = "0.1.0"
-source = { git = "https://github.com/bay6-ai/connect6-pro-python.git?rev=dev#14598c0b04fa9a2b24b9c2a7b3f6de930afa7fd2" }
-dependencies = [
-    { name = "aiobotocore" },
-    { name = "beautifulsoup4" },
-    { name = "boto3" },
-    { name = "cryptography" },
-    { name = "dateparser" },
-    { name = "deep-translator" },
-    { name = "fastapi" },
-    { name = "langchain" },
-    { name = "langchain-aws" },
-    { name = "langchain-google-genai" },
-    { name = "langgraph" },
-    { name = "langgraph-checkpoint-postgres" },
-    { name = "mysql-connector-python" },
-    { name = "pandas" },
-    { name = "psycopg", extra = ["binary"] },
-    { name = "pymysql" },
-    { name = "pypdf" },
-    { name = "pytz" },
-    { name = "requests" },
-    { name = "tavily-python" },
-    { name = "uvicorn", extra = ["standard"] },
-]
 
 [[package]]
 name = "cryptography"
@@ -1092,7 +1065,6 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "aiohttp" },
-    { name = "connect6-pro-python" },
     { name = "pycryptodome" },
     { name = "requests" },
     { name = "websocket-client" },
@@ -1102,7 +1074,6 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "aiohttp", specifier = ">=3.9.0" },
-    { name = "connect6-pro-python", git = "https://github.com/bay6-ai/connect6-pro-python.git?rev=dev" },
     { name = "pycryptodome", specifier = ">=3.20.0" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "websocket-client", specifier = ">=1.9.0" },
