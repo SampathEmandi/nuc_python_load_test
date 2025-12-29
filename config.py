@@ -5,8 +5,15 @@ Configuration constants for the NUC Python load testing application.
 # ============================================================================
 # Load Test Configuration
 # ============================================================================
-NUM_SESSIONS = 5
+NUM_SESSIONS = 2
 COURSES = ["MED1060", "BUMA1000"]
+
+# Progressive Ramp-Up Configuration (Strategy 2)
+# These settings control how the load test gradually increases sessions
+RAMP_START_SESSIONS = 10      # Initial number of sessions to start with
+RAMP_MAX_SESSIONS = 500       # Maximum number of sessions to reach
+RAMP_INCREMENT = 50           # Number of sessions to add at each ramp-up step
+RAMP_INTERVAL_SECONDS = 180   # Seconds to wait between ramp-up steps (3 minutes)
 # ============================================================================
 # API URLs
 # ============================================================================
