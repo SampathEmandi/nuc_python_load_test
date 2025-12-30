@@ -21,5 +21,5 @@ EXPOSE 8000
 
 # Run the FastAPI app with reload
 # Use uv run to execute uvicorn in the virtual environment
-CMD uv run uvicorn api:app --host 0.0.0.0 --port 8000
+CMD uv run uvicorn api:app --port 8000
 

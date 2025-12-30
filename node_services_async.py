@@ -35,8 +35,8 @@ async def generate_token():
     })
 
     try:
-        # Disable SSL verification to match original behavior
-        connector = aiohttp.TCPConnector(ssl=False)
+        # Enable SSL verification
+        connector = aiohttp.TCPConnector(ssl=True)
         async with aiohttp.ClientSession(connector=connector) as session:
             async with session.post(
                 GENERATE_TOKEN_URL,
@@ -66,8 +66,8 @@ async def create_chat(token):
     })
     
     try:
-        # Disable SSL verification to match original behavior
-        connector = aiohttp.TCPConnector(ssl=False)
+        # Enable SSL verification
+        connector = aiohttp.TCPConnector(ssl=True)
         async with aiohttp.ClientSession(connector=connector) as session:
             async with session.post(
                 CREATE_CHAT_URL,
